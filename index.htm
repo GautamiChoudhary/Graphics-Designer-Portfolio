@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fef9f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #ff6584;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #ff6584;
+        }
+
+        .header p {
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .flex-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ff6584;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .about {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            color: #ff6584;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            color: #ff6584;
+            margin-bottom: 20px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background: #ff6584;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background: #e05472;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="#">My Portfolio</a></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, My name is <b>Gautami Choudhary</b>. I am a Graphics Designer! Explore my work below.</p>
+        </div>
+
+        <div id="about" class="about">
+            <h2>About Me</h2>
+            <p>I specialize in creating visually stunning designs that tell stories. With expertise in tools like Canva and Figma, I bring creativity and professionalism to every project I undertake.</p>
+        </div>
+
+        <div id="work" class="flex-cards">
+            <!-- 13 Cards to Showcase Work -->
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./_Grey And Simple Modern Furniture Pinterest Pin .png" alt="Design 1">
+                </a>
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./action.png" alt="Design 2">
+                </a>
+                <h3>Project Title 2</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Add.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Don't worry.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./get ready for the rock guitar night.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Goa Carnival.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Music Poster.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Musical Retro look Poster.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Panda Global.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Poster.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./SMITA'S.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="card">
+                <a href="https://via.placeholder.com/300" target="_blank">
+                    <img src="./Watch poster.png" alt="Design 13">
+                </a>
+                <h3>Project Title 13</h3>
+                <p>A brief description of the project.</p>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <button onclick="sendEmail()">Get in Touch</button>
+        </div>
+    </div>
+
+    <script>
+        function sendEmail() {
+            const email = "gautamichoudhary0160@gmail.com";
+            const subject = encodeURIComponent("Inquiry from Portfolio");
+            const body = encodeURIComponent("Hello, I would like to discuss a project with you.");
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
